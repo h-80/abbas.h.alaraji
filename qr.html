@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>عباس الاعرجي - QR</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f0f0f;
+  --card:#1c1c1c;
+  --ink:#f1f1f1;
+  --muted:#aaaaaa;
+  --line:#303030;
+  --gold:#d4af37;
+  --shadow:0 4px 20px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;
+  min-height:100vh;
+}
+body{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px calc(40px + env(safe-area-inset-bottom,0px));
+  text-align:center;
+}
+.title{
+  margin:0 0 8px;
+  font-size:1.9rem;
+  font-weight:700;
+  color:var(--gold);
+  letter-spacing:.5px;
+}
+.subtitle{
+  margin:0 0 32px;
+  color:var(--muted);
+  font-size:.95rem;
+  letter-spacing:.3px;
+}
+.qr-box{
+  background:#ffffff;
+  padding:22px;
+  border-radius:24px;
+  box-shadow:0 8px 32px rgba(212,175,55,.25);
+  border:3px solid var(--gold);
+  display:inline-block;
+  line-height:0;
+}
+.qr-box img{
+  display:block;
+  width:260px;
+  height:260px;
+}
+.hint{
+  margin:26px 0 0;
+  color:var(--ink);
+  font-size:1.05rem;
+  font-weight:500;
+  line-height:1.8;
+  max-width:320px;
+}
+.hint .gold{color:var(--gold);font-weight:700}
+.url{
+  margin-top:14px;
+  color:var(--muted);
+  font-size:.8rem;
+  letter-spacing:.3px;
+  direction:ltr;
+  word-break:break-all;
+  max-width:320px;
+}
+.deco{
+  width:60px;
+  height:3px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  margin:22px auto 0;
+  border-radius:2px;
+}
+</style>
+</head>
+<body>
+
+  <h1 class="title">عباس الاعرجي</h1>
+  <p class="subtitle">مواقع التواصل الاجتماعي</p>
+
+  <div class="qr-box">
+    <img 
+      src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&margin=0&data=https://h-80.github.io/abbas.h.alaraji/" 
+      alt="QR Code">
+  </div>
+
+  <p class="hint">
+    <span class="gold">امسح الكود</span> للوصول إلى المواقع<br>والروابط الاجتماعية
+  </p>
+
+  <div class="deco"></div>
+
+  <p class="url">h-80.github.io/abbas.h.alaraji</p>
+
+</body>
+</html>
